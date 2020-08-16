@@ -33,8 +33,8 @@ exports.handler = async function (event) {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.setViewportSize({
-      width: 1920,
-      height: 1080,
+      width: 1024,
+      height: 512,
     });
     await page.goto(uri.path);
 
