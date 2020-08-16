@@ -1,9 +1,66 @@
-.SocialCard {
+
+@font-face {
+  font-family: 'lyon-display';
+  src: url('fonts/LyonDisplay-Medium-Web.eot');
+  src: url('fonts/LyonDisplay-Medium-Web.eot?#iefix') format('embedded-opentype'),
+       url('fonts/LyonDisplay-Medium-Web.woff2') format('woff2'),
+       url('fonts/LyonDisplay-Medium-Web.woff') format('woff');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'sharp-sans';
+  src: url('fonts/SharpSans-Semibold.eot');
+  src: url('fonts/SharpSans-Semibold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/SharpSans-Semibold.woff2') format('woff2'),
+       url('fonts/SharpSans-Semibold.woff') format('woff');
+  font-weight: bold;
+}
+
+.social-card {
   background: #FFF;
+  /*background: url('images/header.png') no-repeat top left;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #000;
+  border: solid 1px #000;
+  position:relative;
+}
+.header {
+  width:1024px;
+  content: url('images/header.png');
+  position: absolute;
+  top:0;
+}
+.footer {
+  width:1024px;
+  content: url('images/footer.png');
+  position: absolute;
+  bottom:0;
+}
+.social-card .logo {
+  position: absolute;
+  top:50px;
+}
+.social-card h1 {
+  position: absolute;
+  top:130px;
+  text-align:center;
+  margin-left:150px;
+  margin-right:150px;
+  font-size: 2.3em;
+  font-weight:900;
+}
+.author {
+  position:absolute;
+  bottom:100px;
+  font-weight: bold;
+}
+.author img {
+  width:50px;
+  border-radius: 100%;
+  margin-bottom: -15px;
+  margin-right:10px;
 }

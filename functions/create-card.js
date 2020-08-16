@@ -2,7 +2,7 @@ const playwright = require("playwright-aws-lambda");
 
 const buildUri = ({ queryStringParameters = {} }) => {
   const {
-    cardpath = "https://social-card-image.netlify.app",
+    cardpath = "https://stb-socialcards.netlify.app",
     id = "social-card",
     title = "No Title, Yet!",
     width,
