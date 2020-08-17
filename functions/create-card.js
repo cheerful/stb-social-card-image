@@ -4,7 +4,7 @@ const buildUri = ({ queryStringParameters = {} }) => {
   const {
     cardpath = "https://stb-socialcards.netlify.app",
     id = "social-card",
-    title = "No Title, Yet!",
+    title = "Stacking the Bricks",
     width,
     height,
     author_avatar = "https://stackingthebricks.com/icon-256.png",
