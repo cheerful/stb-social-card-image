@@ -7,13 +7,15 @@ const buildUri = ({ queryStringParameters = {} }) => {
     title = "No Title, Yet!",
     width,
     height,
+    author_avatar = "https://stackingthebricks.com/icon-256.png",
+    author_name = ""
   } = queryStringParameters;
 
   const dimensions = width && height ? `&width=${width}&height=${height}` : "";
 
   return {
     id,
-    path: `${cardpath}?id=${id}&title=${title}${dimensions}`,
+    path: `${cardpath}?id=${id}&title=${title}${dimensions}&author_avatar=${author_avatar}&&author_name=${author_name}`,
   };
 };
 
@@ -33,8 +35,8 @@ exports.handler = async function (event) {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.setViewportSize({
-      width: 1024,
-      height: 512,
+      width: 1920,
+      height: 1080,
     });
     await page.goto(uri.path);
 
