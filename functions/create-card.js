@@ -40,7 +40,7 @@ exports.handler = async function (event) {
     });
     await page.goto(uri.path);
 
-    await new Promise((resolve) => setTimeout(resolve, "100"));
+    await new Promise((resolve) => setTimeout(resolve, "200"));
     const boundingRect = await page.evaluate(getBoundingSize, uri);
     const screenshotBuffer = await page.screenshot({ clip: boundingRect });
     await browser.close();
