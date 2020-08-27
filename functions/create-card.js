@@ -31,7 +31,7 @@ exports.handler = async function (event) {
   try {
     const uri = buildUri(event);
     console.log("uri", uri.path);
-    await playwrite.loadFont(
+    await playwright.loadFont(
         "https://raw.githack.com/googlei18n/noto-emoji/master/fonts/NotoColorEmoji.ttf"
       );
     const browser = await playwright.launchChromium();
