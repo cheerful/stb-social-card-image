@@ -2,13 +2,13 @@ const playwright = require("playwright-aws-lambda");
 
 const buildUri = ({ queryStringParameters = {} }) => {
   const {
-    cardpath = "https://stb-socialcards.netlify.app",
-    id = "social-card",
-    title = "Stacking the Bricks",
-    width,
-    height,
-    author_avatar = "https://stackingthebricks.com/icon-256.png",
-    author_name = ""
+    cardpath = "https://indyhall-socialcards.netlify.app",
+      id = "social-card",
+      title = "Indy Hall",
+      width,
+      height,
+      author_avatar = "https://new.indyhall.org/assets/images/indy-hall.png",
+      author_name = ""
   } = queryStringParameters;
 
   const dimensions = width && height ? `&width=${width}&height=${height}` : "";
@@ -44,7 +44,7 @@ async function loadFonts() {
 }
 loadFonts();
 
-exports.handler = async function (event) {
+exports.handler = async function(event) {
   try {
     const uri = buildUri(event);
     console.log("uri", uri.path);
