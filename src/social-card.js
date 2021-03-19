@@ -16,7 +16,7 @@ export default ({
       <div class="header"></div>
       <div class="title"><h1>{title}</h1></div>
       <div class="author">
-        <img src={author_avatar} />
+        <img src={author_avatar} alt="Nyte Comics" />
       </div>
       <div class="footer"></div>
     </div>
