@@ -4,10 +4,10 @@ const buildUri = ({ queryStringParameters = {} }) => {
     const {
         cardpath = "https://nyte-sharecard.netlify.app/",
             id = "social-card",
-            title = "Nyte Comics",
+            title = "The most comprehensive library of woman-eating vore comics on the internet.",
             width,
             height,
-            author_avatar = "https://new.indyhall.org/assets/images/indy-hall.png",
+            author_avatar = "https://nyte-collection.netlify.app/assets/nyte-logo.png",
             author_name = ""
     } = queryStringParameters;
 
