@@ -5,8 +5,7 @@ export default ({
     title = "Missing Title",
     width = "1024px",
     height = "512px",
-    author_avatar = "https://new.indyhall.org/assets/images/indy-hall.png",
-    author_name = "Indy Hall"
+    author_avatar = "https://nyte-collection.netlify.app/assets/nyte-logo.png",
 }) => {
     const styles = {
         width: width,
@@ -15,9 +14,9 @@ export default ({
     return (
         <div id="social-card" className="social-card" style={styles}>
       <div class="header"></div>
-      <h1>{title}</h1>
+      <div class="title"><h1>{title}</h1></div>
       <div class="author">
-        <img src={author_avatar} alt={author_name} /> {author_name}
+        <img src={author_avatar} />
       </div>
       <div class="footer"></div>
     </div>
