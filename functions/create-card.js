@@ -2,12 +2,12 @@ const playwright = require("playwright-aws-lambda");
 
 const buildUri = ({ queryStringParameters = {} }) => {
     const {
-        cardpath = "https://nyte-sharecard.netlify.app/",
+        cardpath = "https://stb-socialcards.netlify.app/",
             id = "social-card",
-            title = "The most comprehensive library of woman-eating vore comics on the internet.",
+            title = "Stacking the Bricks",
             width,
             height,
-            author_avatar = "https://nyte-collection.netlify.app/assets/nyte-logo.png",
+            author_avatar = "https://stackingthebricks.com/icon-256.png",
             author_name = ""
     } = queryStringParameters;
 
